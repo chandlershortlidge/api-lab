@@ -1,5 +1,9 @@
-# In your config.py file
-import os
 
-client_id = os.getenv("CLIENT_ID")
-client_secret = os.getenv("CLIENT_SECRET")
+import os
+from dotenv import load_dotenv
+
+# Load environment variables first
+load_dotenv()
+
+client_id = os.getenv("client_id")
+client_secret = os.getenv("client_secret")
